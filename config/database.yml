@@ -2,12 +2,12 @@
 
 development:
   adapter: sqlite3
-  database: db/task-manager-development
+  database: db/gsd-development
 
 test:
   adapter: sqlite3
-  database: db/task-manager-test
+  database: db/gsd-test
 
 production:
   adapter: sqlite3
-  database: db/task-manager-production
+  database: db/gsd-production

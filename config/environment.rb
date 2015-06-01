@@ -16,9 +16,9 @@ Dir[APP_ROOT.join('app', 'models', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 # configure Server settings
-class TaskManager < Sinatra::Base
+class GSD < Sinatra::Base
   set :method_override, true
   set :root, APP_ROOT.to_path
-  set :views, File.join(TaskManager.root, "app", "views")
-  set :public_folder, File.join(TaskManager.root, "app", "public")
+  set :views, File.join(GSD.root, "app", "views")
+  set :public_folder, File.join(GSD.root, "app", "public")
 end
